@@ -28,12 +28,14 @@ func (q *Queries) GetQuoteByID(ctx context.Context, id int32) (Quote, error) {
 	return i, err
 }
 
-const getTotalQuotes = `-- name: GetTotalQuotes :exec
+const getTotalQuotes = `-- name: GetTotalQuotes :one
 SELECT COUNT(*)
 FROM Quotes
 `
 
-func (q *Queries) GetTotalQuotes(ctx context.Context) error {
-	_, err := q.db.ExecContext(ctx, getTotalQuotes)
-	return err
+func (q *Queries) GetTotalQuotes(ctx context.Context) (int64, error) {
+	row := q.db.QueryRowContext(ctx, getTotalQuotes)
+	var count int64
+	err := row.Scan(&count)
+	return count, err
 }

@@ -1,4 +1,4 @@
--- name: GetTotalQuotes :exec
+-- name: GetTotalQuotes :one
 SELECT COUNT(*)
 FROM Quotes;
 -- name: GetQuoteByID :one
