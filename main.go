@@ -9,6 +9,7 @@ import (
 func main() {
 
 	db := sql.CreateDBInstance()
+
 	app := fiber.New()
 	router.SetupRoutes(app, db)
 	app.Listen(":8080")

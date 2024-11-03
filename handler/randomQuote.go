@@ -19,7 +19,7 @@ func GetRandomQuote(c *fiber.Ctx, db *database.Queries) error {
 	var resp Response
 	quoteCache := cache.GetCachedItem()
 	timeNow := time.Now().UTC()
-	if quoteCache == nil || timeNow.Before(quoteCache.Expiration) {
+	if quoteCache == nil || timeNow.After(quoteCache.Expiration) {
 		totalQuotes, _ := db.GetTotalQuotes(c.Context())
 		id := rand.IntN(int(totalQuotes))
 
