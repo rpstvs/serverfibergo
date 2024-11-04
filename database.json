@@ -1,0 +1,45 @@
+{
+  "authors": [
+    {
+      "authorname": "Marcus Aurelius",
+      "description": "Marcus Aurelius (121–180 AD), Roman Emperor and Stoic philosopher, ruled from 161 to 180 AD. Known for Meditations, his reflections on duty and resilience, he exemplified Stoic values. His reign faced immense challenges, including frontier wars and the Antonine Plague, yet he led with justice and concern for the common good. One of Rome's Five Good Emperors, Marcus’s leadership preserved stability, though his death marked the beginning of the empire's slow decline.",
+      "imgLink": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Metropolitan_Marcus_Aurelius_Roman_2C_AD_%28cropped%29.jpg/800px-Metropolitan_Marcus_Aurelius_Roman_2C_AD_%28cropped%29.jpg",
+      "books": [
+        {
+          "name": "Meditations",
+          "link": "https://www.amazon.com/Meditations-Penguin-Classics-Marcus-Aurelius/dp/0140449337"
+        }
+      ]
+    },
+    {
+      "authorname": "Seneca",
+      "description": "Seneca (4 BC–65 AD) was a Roman philosopher, statesman, and playwright, central to Stoic thought. As an advisor to Emperor Nero, he aimed to guide the young ruler wisely, though he later distanced himself due to Nero’s excesses. Seneca’s works, like Letters to Lucilius, emphasize ethics, resilience, and the importance of inner peace. His philosophy focused on self-control and rationality. Forced to take his own life after being implicated in a plot, he died as a Stoic martyr.",
+      "imgLink": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/0_S%C3%A9n%C3%A8que_-_Mus%C3%A9e_du_Prado_-_Cat._144_-_%282%29.JPG/800px-0_S%C3%A9n%C3%A8que_-_Mus%C3%A9e_du_Prado_-_Cat._144_-_%282%29.JPG",
+      "books": [
+        {
+          "name": "Letters from a Stoic",
+          "link": "https://www.amazon.com/Letters-Penguin-Classics-Lucius-Annaeus/dp/0140442103"
+        },
+        {
+          "name": "On the Shortness of Life",
+          "link": "https://www.amazon.com/Shortness-Life-Penguin-Great-Ideas/dp/0143036327"
+        }
+      ]
+    },
+    {
+      "authorname": "Epictetus",
+      "description": "Epictetus (c. 50–135 AD) was a Greek Stoic philosopher born into slavery, later freed, and known for his teachings on inner freedom and resilience. After studying in Rome, he established a school in Nicopolis, Greece, following his exile by Emperor Domitian. His philosophy, recorded by his student Arrian in the Discourses and Enchiridion, emphasized self-mastery, focusing on what is within one’s control. Epictetus remains influential for his insights on living a virtuous and resilient life.",
+      "imgLink": "https://dailystoic.com/wp-content/uploads/2018/04/epictetus.jpg",
+      "books": [
+        {
+          "name": "Discourses and Selected Writings",
+          "link": "https://www.amazon.com/Discourses-Selected-Writings-Penguin-Classics/dp/0140449469"
+        },
+        {
+          "name": "Art of Living: The Classical Manual on Virtue, Happiness, and Effectiveness",
+          "link": "https://www.amazon.com/Art-Living-Classical-Happiness-Effectiveness/dp/0061286052"
+        }
+      ]
+    }
+  ]
+}
