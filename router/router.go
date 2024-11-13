@@ -20,7 +20,7 @@ func SetupRoutes(app *fiber.App, db *database.Queries, quoteCache *cache.CacheQu
 
 	app.Get("/author", func(c *fiber.Ctx) error {
 		log.Println("Retreiving author info")
-		return handler.GetAuthor(c)
+		return handler.GetAuthor(c, quoteCache)
 	})
 	quote := app.Group("/quote", logger.New())
 
