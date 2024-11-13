@@ -27,7 +27,7 @@ func GetRandomQuote(c *fiber.Ctx, db *database.Queries, cacheQuote *cache.CacheQ
 
 		cacheQuote.Quote.Author = quote.Author
 		cacheQuote.Quote.Book = quote.Book
-		cacheQuote.Quote.Quote = quote.Book
+		cacheQuote.Quote.Quote = quote.Quote
 		cacheQuote.Expiration = time.Now().Add(24 * time.Hour)
 		resp = Response{
 			Quote:  quote.Quote,
