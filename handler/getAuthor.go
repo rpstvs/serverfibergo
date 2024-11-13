@@ -21,8 +21,7 @@ type AuthorInfo struct {
 	Books      []Book `json:"books"`
 }
 
-func GetAuthor(c *fiber.Ctx) error {
-	quoteCache := cache.GetCachedItem()
+func GetAuthor(c *fiber.Ctx, quoteCache *cache.CacheQuote) error {
 	AuthorResp := AuthorInfo{}
 	authors, err := database.LoadAuthors("database.json")
 	if err != nil {
