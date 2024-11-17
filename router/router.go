@@ -27,4 +27,8 @@ func SetupRoutes(app *fiber.App, db *database.Queries, quoteCache *cache.CacheQu
 	quote.Get("/random", func(c *fiber.Ctx) error {
 		return handler.GetRandomQuote(c, db, quoteCache)
 	})
+
+	quote.Get("/", func(c *fiber.Ctx) error {
+		return handler.GetQuote(c, db)
+	})
 }
